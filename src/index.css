@@ -1,13 +1,87 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-logo {
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: 400;
+  padding: 35px 0 0 40px;
+  margin-right: auto;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(227, 41, 41);
+  position: fixed;
+}
+
+.nav-links {
+  color: #888;
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.greeting {
+  font: inherit;
+  font-weight: 600;
+  margin: 65px 0 35px 35px;
+  font-size: 36px;
+  animation: fadeIn 1.25s;
+}
+
+.focus-question {
+  margin: 35px 0 35px 35px;
+}
+
+.user-input {
+  -color: transparent;
+  caret-color: auto;
+  font-size: 24px;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #333333 2px;
+  margin-left: 35px;
+  width: 80%;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
