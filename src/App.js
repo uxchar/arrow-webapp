@@ -1,45 +1,29 @@
 import React from "react";
 
+import Greeting from "./Greeting";
 import Navbar from "./Navbar";
+import CreateTaskList from "./CreateTaskList";
+import AddTasks from "./AddTasks";
 
-function App() {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
-  //   function greet() {
-  //     let greeting = document.querySelector(".greeting");
+class App extends React.Component {
+  state = {
+    tasks: [""],
+  };
 
-  //     const date = new Date();
-  //     const hours = date.getHours();
-  //     let timeOfDay;
-
-  //     if (hours < 12) {
-  //       timeOfDay = "morning";
-  //     } else if (hours >= 12 && hours < 17) {
-  //       timeOfDay = "afternoon";
-  //     } else {
-  //       timeOfDay = "evening";
-  //     }
-
-  //     return (greeting.textContent = `Good ${timeOfDay}. Would you like to add a task?`);
-  //   }
-
-  //   function addTask() {
-  //     let user_input = document.querySelector(".user_input");
-
-  //     if (user_input == "yes" || "y") {
-  //       greeting.textContent = "What would you like to add?";
-  //     } else if (user_input == "no" || "n") {
-  //       greeting.textContent = "Goodbye";
-  //     } else {
-  //       greeting.textContent = "I did not understand, please type yes or no.";
-  //     }
-  //   }
-  //   greet();
-  //   addTask();
-  // }
-  // App();
+  handleSubmit = (task) => {
+    this.setState({ tasks: [...this.state.tasks, task] });
+  };
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <div className="wrap">
+          <Greeting />
+          <CreateTaskList tasks={this.state.tasks} />
+          <AddTasks onFormSubmit={this.handleSubmit} />
+        </div>
+      </div>
+    );
+  }
 }
 export default App;
