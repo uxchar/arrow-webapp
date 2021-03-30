@@ -2,7 +2,7 @@ import React from "react";
 
 import Greeting from "./Greeting";
 import Navbar from "./Navbar";
-import CreateTaskList from "./CreateTaskList";
+import CreateList from "./CreateList";
 import AddTasks from "./AddTasks";
 
 class App extends React.Component {
@@ -19,7 +19,7 @@ class App extends React.Component {
         <Navbar />
         <div className="wrap">
           <Greeting />
-          <CreateTaskList tasks={this.state.tasks} />
+          <CreateList tasks={this.state.tasks} />
           <AddTasks onFormSubmit={this.handleSubmit} />
         </div>
       </div>

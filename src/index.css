@@ -30,18 +30,22 @@ body {
 }
 
 .nav-links {
-  color: #888;
+  color: #fff;
   display: flex;
   text-decoration: none;
   font-size: 16px;
   list-style: none;
-  justify-content: space-between;
 }
 
-.nav-links li {
+.nav-links li a {
+  display: flex;
   padding: 30px;
-  margin-top: 20px;
-  color: #888;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.nav-links li a:hover {
+  color: rgb(8, 233, 210);
 }
 
 .greet {
@@ -52,7 +56,7 @@ body {
   animation: fadeIn 1.25s;
 }
 
-.task-style {
+.-stylistle {
   font-size: 24px;
 }
 
@@ -67,17 +71,21 @@ body {
   border-style: none;
 }
 .task-input {
-  caret-color: auto;
-  font-size: 24px;
+  color: #fff;
+  caret-color: rgb(8, 233, 210);
+  font-size: 28px;
   outline: none;
   outline-style: none;
-  border: solid #888 2px;
-  border-radius: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #fff 2px;
   text-align: center;
   display: block;
   margin: 0 auto;
   width: 80%;
   height: 60px;
+  background-color: black;
 }
 
 .fade-in {
@@ -112,13 +120,16 @@ body {
 .task-item {
   padding: 0 80px;
   color: white;
+  font-size: 24px;
 }
 
 .remove {
   float: right;
 }
-
-.task-list {
+#quote-box {
+  color: #fff;
+}
+.list {
   max-height: 500px;
   display: flex;
   flex-direction: column;
