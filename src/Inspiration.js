@@ -1,57 +1,28 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
 
-// fetch("http://quotes.rest/qod.json", {
-//   method: "GET",
-// })
-//   .then((response) => response.json())
-//   .then((data) => console.log(data))
-//   .catch((err) => {
-//     console.error(err);
-//   });
+function Inspiration() {
+  const [author, setAuthor] = useState("");
+  const [quote, setQuote] = useState("");
 
-class Inspiration extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      author: "",
-      quote: "",
-    };
-  }
+  useEffect(() => {
+    Inspiration();
+  }, []);
 
-  componentDidMount() {
-    this.Quote();
-  }
-
-  Quote() {
-    let url = "http://quotes.rest/qod.json";
-
-    axios.get(url).then((res) => {
-      let data = res.data.quote;
-      let quote = data; //actual quote
-
-      this.setState({
-        quote: quote["quote"],
-        author: quote["author"],
+  function Inspiration() {
+    fetch("http://quotes.rest/qod.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setQuote(data.contents.quotes[0].quote);
+        setAuthor(data.contents.quotes[0].author);
       });
-    });
   }
-
-  getAQuote = () => {
-    this.Quote();
-  };
-
-  render() {
-    const { quote, author } = this.state;
-    return (
-      <div id="quote">
-        <div id="text-quote">
-          <p>{quote}</p>
-          <h5>{author}</h5>
-        </div>
-      </div>
-    );
-  }
+  return (
+    <div className="quote-style fade-in-q">
+      <h1 className="quote">{quote}</h1>
+      <p className="quote-author">-{author}</p>
+    </div>
+  );
 }
 
 export default Inspiration;

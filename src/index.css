@@ -73,7 +73,7 @@ body {
 .task-input {
   color: #fff;
   caret-color: rgb(8, 233, 210);
-  font-size: 28px;
+  font-size: 22px;
   outline: none;
   outline-style: none;
   border-top: none;
@@ -82,13 +82,26 @@ body {
   border-bottom: solid #fff 2px;
   text-align: center;
   display: block;
-  margin: 0 auto;
   width: 80%;
   height: 60px;
   background-color: black;
 }
 
+.task-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2.5s;
+}
+
+.fade-in-q {
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
@@ -99,6 +112,18 @@ body {
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacityQ {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -121,14 +146,24 @@ body {
   padding: 0 80px;
   color: white;
   font-size: 24px;
+  text-align: center;
 }
 
 .remove {
   float: right;
 }
-#quote-box {
+.quote-style {
   color: #fff;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 30px 120px;
 }
+
+.quote-author {
+  font-size: 18px;
+}
+
 .list {
   max-height: 500px;
   display: flex;

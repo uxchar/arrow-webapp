@@ -17,7 +17,6 @@ function Greeting() {
 
   return (
     <div>
-      <Inspiration />
       <h1 className="greet fade-in">
         Good {timeOfDay}. Here are your tasks for today.
       </h1>
