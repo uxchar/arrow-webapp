@@ -16,6 +16,16 @@ Develop your project using a common JavaScript framework such as React, Angular,
 
 ### Requirements
 
-Install NodeJS and React using downloads or npm commands
+Install React using 
 
-Run npm start in "sarrow" folder
+```
+npm i react
+```
+
+Run 
+
+```
+npm start
+```
+
+ in "arrow" folder
