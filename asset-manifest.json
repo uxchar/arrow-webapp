@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/css/main.31de4a13.chunk.css",
+    "main.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/main.281401ca.chunk.js",
+    "main.js.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/main.281401ca.chunk.js.map",
+    "runtime-main.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/runtime-main.199960c7.js",
+    "runtime-main.js.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/runtime-main.199960c7.js.map",
+    "static/js/2.b56c7ec3.chunk.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/2.b56c7ec3.chunk.js",
+    "static/js/2.b56c7ec3.chunk.js.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/2.b56c7ec3.chunk.js.map",
+    "static/js/3.5c1314e5.chunk.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/3.5c1314e5.chunk.js",
+    "static/js/3.5c1314e5.chunk.js.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/3.5c1314e5.chunk.js.map",
+    "index.html": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/index.html",
+    "static/css/main.31de4a13.chunk.css.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/css/main.31de4a13.chunk.css.map",
+    "static/js/2.b56c7ec3.chunk.js.LICENSE.txt": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/2.b56c7ec3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.199960c7.js",
+    "static/js/2.b56c7ec3.chunk.js",
+    "static/css/main.31de4a13.chunk.css",
+    "static/js/main.281401ca.chunk.js"
+  ]
+}
