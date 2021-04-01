@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: acumin-pro, sans-serif;
+  font-family: clear sans, sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: black;
@@ -56,20 +56,21 @@ body {
   animation: fadeIn 1.25s;
 }
 
-.-stylistle {
-  font-size: 24px;
-}
-
 .add-task-btn {
   display: block;
-  margin: 0 auto;
-  font-size: 20px;
+  margin: 0 0 0 50px;
+  font-size: 18px;
   color: #fff;
   background-color: #e32929;
   border-radius: 8px;
-  padding: 15px 35px;
+  padding: 5px 25px;
   border-style: none;
 }
+
+.add-task-btn:hover {
+  cursor: pointer;
+}
+
 .task-input {
   color: #fff;
   caret-color: rgb(8, 233, 210);
@@ -82,7 +83,7 @@ body {
   border-bottom: solid #fff 2px;
   text-align: center;
   display: block;
-  width: 80%;
+  width: 70%;
   height: 60px;
   background-color: black;
 }
@@ -90,7 +91,8 @@ body {
 .task-box {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-self: flex-start;
+  margin: 70px 0 60px 75px;
 }
 
 .fade-in {
@@ -133,9 +135,7 @@ body {
 /*Task Board*/
 
 .greet {
-  text-align: center;
-  margin-bottom: 30px;
-  font-family: inherit;
+  margin: 0 70px 30px 70px;
 }
 
 .task-item:hover {
@@ -143,31 +143,29 @@ body {
   cursor: pointer;
 }
 .task-item {
-  padding: 0 80px;
   color: white;
   font-size: 24px;
-  text-align: center;
+  margin: 0 0 10px 40px;
 }
 
-.remove {
-  float: right;
-}
 .quote-style {
   color: #fff;
-  font-size: 10px;
+
+  font-size: 8px;
   display: flex;
   flex-direction: column;
-  margin: 5px 0 30px 120px;
+  margin: 40px 120px 70px 75px;
 }
 
 .quote-author {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .list {
   max-height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 30px;
+
   margin-bottom: 50px;
 }

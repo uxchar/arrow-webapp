@@ -11,13 +11,13 @@ class App extends React.Component {
     tasks: [""],
   };
 
-  handleDelete = (i) => {
+  remove = (i) => {
     const updateList = [...this.state.tasks];
     updateList.splice(i, 1);
     this.setState({ tasks: updateList });
   };
 
-  handleSubmit = (task) => {
+  add = (task) => {
     this.setState({ tasks: [...this.state.tasks, task] });
   };
   render() {
@@ -27,8 +27,9 @@ class App extends React.Component {
         <div className="wrap">
           <Inspiration />
           <Greeting />
-          <CreateList tasks={this.state.tasks} onDelete={this.handleDelete} />
-          <AddTasks onFormSubmit={this.handleSubmit} />
+          <AddTasks onFormSubmit={this.add} />
+
+          <CreateList tasks={this.state.tasks} onDelete={this.remove} />
         </div>
       </div>
     );

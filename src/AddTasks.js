@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class AddTasks extends React.Component {
   state = { taskInput: "" };
 
-  handleSubmit = (e) => {
+  add = (e) => {
     e.preventDefault();
     if (this.state.taskInput === "") return;
     this.props.onFormSubmit(this.state.taskInput);
@@ -14,7 +14,7 @@ class AddTasks extends React.Component {
     return (
       <div className="taskBoard">
         <div className="add">
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.add}>
             <div className="task-box">
               <input
                 type="text"
@@ -23,11 +23,10 @@ class AddTasks extends React.Component {
                 className="task-input"
                 placeholder="What task would you like to add?"
               ></input>
+              <button type="submit" className="add-task-btn">
+                Add +
+              </button>
             </div>
-            <br></br>
-            <button type="submit" className="add-task-btn">
-              Add
-            </button>
           </form>
         </div>
       </div>
