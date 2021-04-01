@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <div>
-      <header class="nav">
+      <header className="nav">
         <a className="site-logo" href="/">
           Arrow
         </a>

@@ -12,23 +12,19 @@ class AddTasks extends React.Component {
 
   render() {
     return (
-      <div className="taskBoard">
-        <div className="add">
-          <form onSubmit={this.add}>
-            <div className="task-box">
-              <input
-                type="text"
-                onChange={(e) => this.setState({ taskInput: e.target.value })}
-                value={this.state.taskInput}
-                className="task-input"
-                placeholder="What task would you like to add?"
-              ></input>
-              <button type="submit" className="add-task-btn">
-                Add +
-              </button>
-            </div>
-          </form>
-        </div>
+      <div className="task-board">
+        <form className="container" onSubmit={this.add}>
+          <input
+            type="text"
+            onChange={(e) => this.setState({ taskInput: e.target.value })}
+            value={this.state.taskInput}
+            className="task-input"
+            placeholder="What task would you like to add?"
+          ></input>
+          <button type="submit" className="add-task-btn">
+            Add +
+          </button>
+        </form>
       </div>
     );
   }
