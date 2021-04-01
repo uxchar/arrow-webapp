@@ -16,6 +16,3 @@ Develop your project using a common JavaScript framework such as React, Angular,
 
 ### How to Run
 
-1. Go to "build"
-
-   2.Open index file in your browser
