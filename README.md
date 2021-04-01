@@ -16,3 +16,15 @@ Develop your project using a common JavaScript framework such as React, Angular,
 
 ### How to Run
 
+1. cd to the project folder, then in your command line:
+
+```js
+//Step 1: 
+npm install
+
+//Step 2:
+npm start
+
+// 
+[ctrl + c to terminate]
+```
