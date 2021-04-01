@@ -14,18 +14,8 @@ Create an array, dictionary or list, populate it with multiple values, retrieve 
 
 Develop your project using a common JavaScript framework such as React, Angular, Vue, etc. **Developed with React framework**
 
-### Requirements
+### How to Run
 
-Install React using 
+1. Go to "build"
 
-```
-npm i react
-```
-
-Run 
-
-```
-npm start
-```
-
- in "arrow" folder
+   2.Open index file in your browser
