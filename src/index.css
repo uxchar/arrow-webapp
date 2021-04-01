@@ -11,6 +11,8 @@ body {
   background-color: black;
 }
 
+/* Nav styles */
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -40,7 +42,7 @@ body {
 .nav-links li a {
   display: flex;
   padding: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #fff;
 }
 
@@ -48,33 +50,37 @@ body {
   color: rgb(8, 233, 210);
 }
 
+/* Quote component styles */
+
+.quote-style {
+  color: #fff;
+
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 120px 70px 75px;
+}
+
+.quote-author {
+  font-size: 16px;
+}
+
+/* Greeting component styles */
+
 .greet {
   color: #fff;
   font-weight: 600;
-  margin: 65px 0 45px 35px;
   font-size: 36px;
+  margin: 0 70px 30px 70px;
   animation: fadeIn 1.25s;
 }
 
-.add-task-btn {
-  display: block;
-  margin: 0 0 0 50px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #e32929;
-  border-radius: 8px;
-  padding: 5px 25px;
-  border-style: none;
-}
-
-.add-task-btn:hover {
-  cursor: pointer;
-}
+/* Task input and button styles */
 
 .task-input {
   color: #fff;
   caret-color: rgb(8, 233, 210);
-  font-size: 22px;
+  font-size: 20px;
   outline: none;
   outline-style: none;
   border-top: none;
@@ -92,8 +98,46 @@ body {
   display: flex;
   flex-direction: row;
   justify-self: flex-start;
-  margin: 70px 0 60px 75px;
+  margin: 70px 0 40px 75px;
 }
+
+.task-item:hover {
+  background-color: #e32929;
+  width: fit-content;
+  cursor: pointer;
+}
+.task-item {
+  color: white;
+  font-size: 24px;
+  margin: 0 0 10px 40px;
+}
+
+.add-task-btn {
+  display: block;
+  margin: 0 0 0 50px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #e32929;
+  border-radius: 8px;
+  padding: 5px 25px;
+  border-style: none;
+}
+
+.add-task-btn:hover {
+  cursor: pointer;
+}
+
+/* Task list styles */
+
+.list {
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  margin-bottom: 50px;
+}
+
+/* Fade animation for text */
 
 .fade-in {
   opacity: 1;
@@ -130,42 +174,4 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-/*Task Board*/
-
-.greet {
-  margin: 0 70px 30px 70px;
-}
-
-.task-item:hover {
-  background-color: #e32929;
-  cursor: pointer;
-}
-.task-item {
-  color: white;
-  font-size: 24px;
-  margin: 0 0 10px 40px;
-}
-
-.quote-style {
-  color: #fff;
-
-  font-size: 8px;
-  display: flex;
-  flex-direction: column;
-  margin: 40px 120px 70px 75px;
-}
-
-.quote-author {
-  font-size: 16px;
-}
-
-.list {
-  max-height: 500px;
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-
-  margin-bottom: 50px;
 }

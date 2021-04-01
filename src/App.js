@@ -1,10 +1,10 @@
 import React from "react";
 
-import Greeting from "./Greeting";
-import Navbar from "./Navbar";
-import CreateList from "./CreateList";
-import AddTasks from "./AddTasks";
-import Inspiration from "./Inspiration";
+import Greeting from "./components/Greeting";
+import Navbar from "./components/Navbar";
+import CreateList from "./components/CreateList";
+import AddTasks from "./components/AddTasks";
+import Inspiration from "./components/Inspiration";
 
 class App extends React.Component {
   state = {

@@ -1,7 +1,5 @@
 import React from "react";
 
-import Inspiration from "./Inspiration";
-
 function Greeting() {
   const date = new Date();
   const hours = date.getHours();
