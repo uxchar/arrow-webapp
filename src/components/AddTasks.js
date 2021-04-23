@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from "react"; // Unnecessary import
 
-class AddTasks extends React.Component {
+class AddTasks extends React.Component {  // Mix of classes
   state = { taskInput: "" };
 
   add = (e) => {

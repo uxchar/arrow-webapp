@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; // Unnecessary import
 
 function Greeting() {
   const date = new Date();
@@ -18,7 +18,7 @@ function Greeting() {
       <h1 className="greet fade-in">
         Good {timeOfDay}. Here are your tasks for today.
       </h1>
-      <h2></h2>
+      <h2></h2> /* Extra tags */
     </div>
   );
 }

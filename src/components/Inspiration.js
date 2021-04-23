@@ -8,7 +8,7 @@ function Inspiration() {
     Inspiration();
   }, []);
 
-  function Inspiration() {
+  function Inspiration() { // Naming
     fetch("http://quotes.rest/qod.json")
       .then((res) => res.json())
       .then((data) => {
