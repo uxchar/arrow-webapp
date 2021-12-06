@@ -1,5 +1,3 @@
-import React from "react";
-
 function Greeting() {
   const date = new Date();
   const hours = date.getHours();
@@ -18,7 +16,6 @@ function Greeting() {
       <h1 className="greet fade-in">
         Good {timeOfDay}. Here are your tasks for today.
       </h1>
-      <h2></h2>
     </div>
   );
 }

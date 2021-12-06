@@ -27,7 +27,7 @@ function Navbar() {
           </li>
         </ul>
       </header>
-      <h1 className="greeting fade-in"></h1>\{" "}
+      <h1 className="greeting fade-in"></h1>
     </div>
   );
 }

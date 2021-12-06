@@ -5,10 +5,10 @@ function Inspiration() {
   const [quote, setQuote] = useState("");
 
   useEffect(() => {
-    Inspiration();
+    fetchQuote();
   }, []);
 
-  function Inspiration() {
+  function fetchQuote() {
     fetch("http://quotes.rest/qod.json")
       .then((res) => res.json())
       .then((data) => {
