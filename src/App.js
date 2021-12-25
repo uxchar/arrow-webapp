@@ -25,7 +25,7 @@ class App extends React.Component {
       <div>
         <Navbar />
         <div className="wrap">
-          <Inspiration />
+          {/* <Inspiration /> */}
           <Greeting />
           <AddTasks onFormSubmit={this.add} />
 
