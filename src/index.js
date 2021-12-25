@@ -6,6 +6,9 @@ import reportWebVitals from "./components/reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
+    <BrowserRouter basename={window.location.pathname || ""}>
+      <Route exact path="/" component={Index} />
+    </BrowserRouter>
     <App />
   </React.StrictMode>,
   document.getElementById("root")
