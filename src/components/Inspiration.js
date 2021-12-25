@@ -10,11 +10,20 @@ function Inspiration() {
 
   function fetchQuote() {
     fetch("http://quotes.rest/qod.json")
-      .then((res) => res.json())
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Something went wrong");
+        }
+      })
       .then((data) => {
         console.log(data);
         setQuote(data.contents.quotes[0].quote);
         setAuthor(data.contents.quotes[0].author);
+      })
+      .catch(function (error) {
+        console.log(error);
       });
   }
   return (
