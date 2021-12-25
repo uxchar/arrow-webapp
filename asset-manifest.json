@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/css/main.31de4a13.chunk.css",
-    "main.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/main.281401ca.chunk.js",
-    "main.js.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/main.281401ca.chunk.js.map",
+    "main.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/main.ad91da1c.chunk.js",
+    "main.js.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/main.ad91da1c.chunk.js.map",
     "runtime-main.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/runtime-main.199960c7.js",
     "runtime-main.js.map": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/runtime-main.199960c7.js.map",
     "static/js/2.b56c7ec3.chunk.js": "/%E2%80%9Chttp://uxchar.github.io/arrow-webapp/static/js/2.b56c7ec3.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.199960c7.js",
     "static/js/2.b56c7ec3.chunk.js",
     "static/css/main.31de4a13.chunk.css",
-    "static/js/main.281401ca.chunk.js"
+    "static/js/main.ad91da1c.chunk.js"
   ]
 }
