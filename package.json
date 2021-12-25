@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "homepage": "“https://uxchar.github.io/arrow-webapp",
-  "private": true,
+  "private": false,
   "dependencies": {
     "-": "0.0.1",
     "@testing-library/jest-dom": "^5.11.9",
