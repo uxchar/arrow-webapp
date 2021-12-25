@@ -9,7 +9,7 @@ function Inspiration() {
   }, []);
 
   function fetchQuote() {
-    fetch("http://quotes.rest/qod.json")
+    fetch("https://quotes.rest/qod.json")
       .then((response) => {
         if (response.ok) {
           return response.json();
